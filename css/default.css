@@ -1,0 +1,215 @@
+@charset "utf-8";
+/* CSS Document */
+
+body{
+	background			: #a4c6df;
+	font-size			: 10px;
+	margin				: 0px;
+}
+
+.clearfix:before,
+.clearfix:after {
+   content: " ";
+   display: table;
+}
+ 
+.clearfix:after {
+   clear: both;
+}
+ 
+.clearfix {
+   *zoom: 1;
+}
+
+img, picture, video, embed{
+	max-width			: 100%;
+}
+
+#container{
+	max-width			: 1200px;
+	margin				: 0px auto;
+}
+
+#header{
+	width				: 100%; /*1200px*/
+	float				: left;
+}
+
+#logo{
+	width				: 17.75%; /*213px*/
+	float				: left;
+}
+
+#menu{
+	width				: 100%; /*987px*/
+	float				: left;
+    height				: 30px;
+	margin-top			: -30px;
+}
+
+#menu ul{
+	float				: right;
+}
+
+#menu ul li{
+	display				: inline;
+}
+
+#menu ul li a{
+	cursor				: pointer;
+	padding				: 10px 10px 1px 10px;
+	margin				: 0px 5px;
+	background-color	: #000000;
+	font-size			: 1.6em; /*14px*/
+	font-weight			: bold;	
+	border-radius		: 5px 5px 0px 0px;
+	text-decoration		: none;
+	color				: #FFFFFF;
+}
+
+#menu ul li a:hover{
+	background-color	: #000099;
+}
+
+#banner{
+	width				: 100%; /*1200px*/
+	float				: left;
+}
+
+#itens{
+	width				: 100%; /*1200px*/
+	float				: left;
+}
+
+.infosItens{
+	width				: 23.3333333333%; /*280px*/
+	margin				: 5px 0.8333333333%; /*5px*/
+	float				: left;
+}
+
+.imagenInfo{
+	width				: 100%; /*280px*/
+	float				: left;
+}
+
+.textoInfo{
+	width				: 100%; /*280px*/
+	float				: left;
+	font-size			: 1.4em; /*12px*/
+	margin-top			: 5px;
+}
+
+#footer{
+	width				: 100%; /*1200px*/
+	float				: left;
+	color				: #FFFFFF;
+	font-size			: 1.8em;
+	font-weight			: bold;
+	text-align			: center;
+	background			: #61ad49;
+	margin-top			: 5px;
+	padding				: 10px 0px;
+}
+
+/*1200 pixels – Desktops com monitores widescreen*/
+@media screen and (max-width: 1200px){
+	
+}
+
+/*960 pixels – Tablets em formato paisagem e monitores antigos*/
+@media screen and (max-width: 960px){
+	
+}
+
+/*768 pixels – Tablets em formato retrato*/
+@media screen and (max-width: 768px){
+	.infosItens{
+		width				: 48.6979166666%; /*374px*/
+		margin				: 5px 0.6510416666%; /*5px*/
+		float				: left;
+	}
+}
+
+/*480 pixels – Smartphones em formato paisagem*/
+@media screen and (max-width: 480px){
+	.infosItens{
+		width				: 100%; /*480px*/
+		margin				: 5px 0px; /*5px*/
+		float				: left;
+	}
+	
+	.imagenInfo{
+		width				: 30%; /*144px*/
+		float				: left;
+	}
+	
+	.textoInfo{
+		width				: 68.9583333333%; /*336px*/
+		margin-left			: 1.0416666666%; /*5px*/
+		float				: left;
+		font-size			: 1.2em; /*12px*/
+		margin-top			: 0px;
+	}
+
+}
+
+/*360 pixels – Smartphones em formato retrato*/
+@media screen and (max-width: 360px){
+	#logo{
+		width				: 100%; /*360px*/
+		text-align			: center;
+	}
+	
+	#logo img{
+		width				: 30%; /*108px*/
+	}
+	
+	#menu{
+		width				: 100%; /*360px*/
+		float				: left;
+   		height				: 25px;
+		margin-top			: 2px;
+	}
+	
+	#menu ul{
+		text-align			: center;
+		width				: 100%; /*360px*/
+	}
+	
+	#menu ul li{
+		display				: inline;
+	}
+	
+	#menu ul li a{
+		cursor				: pointer;
+		padding				: 10px 5px 0px 5px;
+		margin				: 0px 5px;
+		background-color	: #000000;
+		font-size			: 1.4em; /*14px*/
+		font-weight			: bold;	
+		border-radius		: 10px 10px 0px 0px;
+		text-decoration		: none;
+		color				: #FFFFFF;
+	}
+	
+	#menu ul li a:hover{
+		background-color	: #000099;
+	}
+	
+	.imagenInfo{
+		width				: 0%; /*144px*/
+		float				: left;
+	}
+	
+	.textoInfo{
+		width				: 100%; /*336px*/
+		margin-left			: 0%; /*5px*/
+		font-size			: 1.4em; /*12px*/
+		margin-top			: 5px;
+	}
+}
+
+/*320 pixels – Smartphones em formato retrato*/
+@media screen and (max-width: 320px){
+
+}
